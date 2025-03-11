@@ -21,12 +21,12 @@ SAM
 
 ## Performance
 
-<img src="./imgs/original_img.jpg" alt="ori_img" style="zoom:50%;" />
+<img src="./imgs/original_img.jpg" alt="ori_img" style="zoom:10%;" />
 
-<img src="./imgs/annotation.jpg" alt="A" style="zoom:50%;" />
+<img src="./imgs/annotation.jpg" alt="A" style="zoom:10%;" />
 
-<img src="./imgs/prompts.jpg" alt="A" style="zoom:50%;" />
+<img src="./imgs/prompts.jpg" alt="A" style="zoom:10%;" />
 
-<img src="./imgs/overlay_mask.jpg" alt="A" style="zoom:50%;" />
+<img src="./imgs/overlay_mask.jpg" alt="A" style="zoom:10%;" />
 
-<img src="./imgs/mask.png" alt="A" style="zoom:50%;" />
+<img src="./imgs/mask.png" alt="A" style="zoom:10%;" />
