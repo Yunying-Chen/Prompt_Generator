@@ -1,5 +1,5 @@
 # Prompt_Generator
-A pipeline to generate well-distributed prompts on target to do SAM Segmentation
+A modular pipeline for generating well-distributed prompts to perform SAM (Segment Anything Model) based segmentation, using sparse 3D-projected annotations.
 
 ## Requirements
 
@@ -7,26 +7,19 @@ SAM
 
 ## Files
 
-- Inference.py: It generates a mask by reading the projected 3d projected points    
-- Generator.py: It generates sparse prompts based on the 3D projected points distribution or the polygon of the targets    
+- Inference.py: Generates segmentation masks from projected 3D points
+- Generator.py: Creates sparse prompts based on point distribution or object polygons
 
 
 
 ## Input
 
-1. Original Images: [W, H, 3]   
-2.  CSV files: annotation files [x, y, classid]
+1. Original Images: Shape [W, H, 3]
+2. CSV files: .csv file with format [x, y, class_id]
+3. Pre-trained model
 
 
 
 ## Performance
 
-<img src="./imgs/original_img.jpg" alt="ori_img" style="zoom:10%;" />
-
-<img src="./imgs/annotation.jpg" alt="A" style="zoom:10%;" />
-
-<img src="./imgs/prompts.jpg" alt="A" style="zoom:10%;" />
-
-<img src="./imgs/overlay_mask.jpg" alt="A" style="zoom:10%;" />
-
-<img src="./imgs/mask.png" alt="A" style="zoom:10%;" />
+<table> <tr> <td><b>Original Image</b></td> <td><b>Annotations</b></td> </tr> <tr> <td><img src="./imgs/original_img.jpg" width="300"/></td> <td><img src="./imgs/annotation.jpg" width="300"/></td> </tr> <tr> <td><b>Generated Prompts</b></td> <td><b>Overlay with Predicted Mask</b></td> </tr> <tr> <td><img src="./imgs/prompts.jpg" width="300"/></td> <td><img src="./imgs/overlay_mask.jpg" width="300"/></td> </tr> <tr> <td colspan="2" align="center"><b>Final Mask</b></td> </tr> <tr> <td colspan="2" align="center"><img src="./imgs/mask.png" width="300"/></td> </tr> </table>
